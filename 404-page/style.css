@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolat&Space+Mono&Montserrat&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
