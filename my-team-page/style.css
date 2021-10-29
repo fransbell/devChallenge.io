@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+  margin-top: 7.85rem;
+}
+
+.title h1 {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+
+  color: #000000;
+}
+
+.title h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.title p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.wrapper {
+  width: 40%;
+}
+
+.container {
+  width: 60%;
+  max-width: 864px;
+  margin: 0 auto;
+  margin-top: 96px;
+  margin-bottom: 110px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personel-card {
+  position: relative;
+  width: 33.33%;
+}
+
+.personel-card img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.personel-card h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #000000;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.personel-card p {
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.personel-card:nth-child(2n + 2) {
+  margin-top: 0;
+}
+
+.personel-card:nth-child(3n + 2) {
+  margin-top: 6rem;
+}
+
+.footer {
+  margin-bottom: 24px;
+}
+
+.footer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .title h2 {
+    margin-top: 3.71rem;
+    margin-bottom: 0.71rem;
+  }
+
+  .personel-card:nth-child(3n + 2) {
+    margin-top: 0;
+  }
+  .personel-card:nth-child(2n + 2) {
+    margin-top: 3rem;
+  }
+
+  .personel-card {
+    width: 50%;
+  }
+
+  .personel-card h3 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .personel-card p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .personel-card h3 {
+    font-size: 8px;
+  }
+}
