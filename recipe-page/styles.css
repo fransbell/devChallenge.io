@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&family=Montserrat&display=swap");
+@import "./ingredients.css";
+@import "./instruction.css";
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.contents {
+  width: 100vw;
+  max-width: 1440px;
+  padding: 0 16.71rem;
+}
+
+.title {
+  margin-top: 52px;
+}
+
+.title h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.title p {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 1.25rem 40% 4rem 2rem;
+
+  position: relative;
+}
+
+.title p span {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contents {
+    padding: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contents {
+    padding: 0 2rem;
+  }
+  .title h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .title p {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 1.25rem 0 4rem 2rem;
+    text-align: justify;
+  }
+}

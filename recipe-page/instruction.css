@@ -1,0 +1,68 @@
+.instruction {
+  margin-top: 28px;
+  position: relative;
+}
+
+.instruction h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #333333;
+}
+
+.instruction .card {
+  margin: 28px 0;
+}
+
+.instruction .card .label {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+
+  background: #f2994a;
+  border-radius: 6px;
+
+  text-align: center;
+  padding: 10px 0;
+}
+
+.instruction .card p {
+  padding-left: 4rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  width: 60%;
+  color: #000000;
+}
+
+.instruction > p {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #bdbdbd;
+
+  margin: 1rem 0 93px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .instruction .card p {
+    width: 100%;
+    text-align: justify;
+  }
+  .instruction h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .instruction p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
