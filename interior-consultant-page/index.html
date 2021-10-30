@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Devchallenges</title>
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/" class="logo">This Interior</a>
+      <div id="menu" onclick="toggleMenu()">
+          <div class="bar b1"></div>
+          <div class="bar b2"></div>
+          <div class="bar b3"></div>
+      </div>
+      <ul>
+        <li id="home"><a href="/?home">home</a></li>
+        <li id="collection"><a href="/?collection">collection</a></li>
+        <li id="about"><a href="/?about">about</a></li>
+        <li id="contact"><a href="/?contact">contact</a></li>        
+      </ul>
+      
+    </div>
+    <div id="navmenu">
+      <div id="menuitem">
+        <a href="/?home">home</a>
+        <a href="/?collection">collection</a>
+        <a href="/?about">about</a>
+        <a href="/?contact">contact</a>
+      </div>
+      
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <h1>Modern interior</h1>
+        <p>A full-Service residential & commercial interior design 
+          and staging company offering professional organizing & eco-services.</p>
+        <a href="/">Read more &#x2192;</a>
+      </div>
+      <div class="thumbnail">
+        <img class="cover" src="./photo1.png" alt="interior design">
+        <div class="profile">
+          <div class="title">
+            <img src="./photo2.png" alt="profile">
+            <div class="title-wrapper">
+              <h4>Aliza Webber</h4>
+              <p>Interior designer</p></div>
+            </div>
+          <h3>Designed in 2020 by Aliza Webber</h3>          
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>created by fransbell - devChallenges.io</p>
+    </div>
+    
+    <script>
+      const query = window.location.search.substr(1)
+      if (query) {
+        document.getElementById(`${query}`).style.borderBottom = "1px solid #fff"
+      }else{
+        window.location.href = '/?home'
+      }
+
+      const toggleMenu = ()=>{
+        const menu = document.getElementById("menu")
+        const navMenu = document.getElementById("navmenu")
+        const navItem = document.getElementById("menuitem")
+        menu.classList.toggle("check")
+        navMenu.classList.toggle("check")
+        navItem.classList.toggle("check")
+      }
+      
+    </script>
+
+  </body>
+</html>

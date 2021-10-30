@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Montserrat&family=Lora&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #ffffff; */
+}
+
+body {
+  background-color: #181719;
+  color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 77px;
+  margin-top: 46px;
+}
+
+.navbar .logo {
+  display: block;
+  width: 108px;
+  height: 32px;
+  padding: 8px;
+  border: 1px solid #ffffff;
+
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#menu {
+  display: none;
+  position: relative;
+  height: 32px;
+  z-index: 5;
+}
+
+.bar {
+  width: 32px;
+  height: 4px;
+  background: #fff;
+  margin: 6px 0;
+  transition: linear 0.25s;
+}
+
+.check .b1 {
+  transform: rotate(45deg) translateY(6px) translateX(10px);
+}
+
+.check .b2 {
+  transition: linear 0.125s;
+  background: rgba(0, 0, 0, 0);
+}
+.check .b3 {
+  transform: rotate(-45deg) translateY(-4px) translateX(8px);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  text-transform: capitalize;
+  list-style-type: none;
+
+  height: 100%;
+
+  color: #fff;
+  display: block;
+  margin: auto 43px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo a:active {
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar li:hover {
+  border-bottom: 2px solid #333;
+}
+
+#navmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+  transition-duration: 0.75s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navmenu.check {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+}
+
+#menuitem.check {
+  display: flex;
+}
+
+#menuitem {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+#menuitem a {
+  padding-bottom: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-transform: capitalize;
+}
+
+#menuitem a:hover {
+  border-bottom: 2px solid oldlace;
+}
+
+.container {
+  padding: 77px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 128px;
+}
+
+.wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper h1 {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+.wrapper p {
+  margin: 10px 0 18px 0;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #fff;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.thumbnail {
+  width: 55%;
+  position: relative;
+}
+
+.thumbnail img {
+  display: block;
+}
+
+.thumbnail .cover {
+  width: 100%;
+}
+
+.thumbnail .profile {
+  position: absolute;
+  width: 70%;
+  height: 35%;
+
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  bottom: -90px;
+  right: 16px;
+
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+}
+.title .title-wrapper {
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.title-wrapper h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.title-wrapper p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+}
+.title img {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+
+.profile h3 {
+  padding: 1rem;
+  padding-left: 0;
+
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.footer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper h1 {
+    font-size: 40px;
+  }
+  .wrapper p {
+    font-size: 20px;
+  }
+  .thumbnail .profile {
+    width: 90%;
+    height: 40%;
+    bottom: -40px;
+  }
+  .title-wrapper h4 {
+    font-size: 12px;
+  }
+  .profile h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+  .navbar {
+    padding: 0 19px;
+    margin-top: 12px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    padding: 77px 12px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper h1 {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .wrapper p {
+    margin: 25px 0 25px 0;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .wrapper a {
+    margin-bottom: 25px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  .thumbnail .profile {
+    width: 70%;
+  }
+  .title-wrapper h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .title-wrapper p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .profile h3 {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .navbar li {
+    margin: auto 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .thumbnail .profile {
+    height: 40%;
+    width: 80%;
+    bottom: -40px;
+  }
+  .profile h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .thumbnail .profile {
+    height: 50%;
+    width: 98%;
+    left: 1%;
+    bottom: -40px;
+  }
+  .profile h3 {
+    font-size: 12px;
+  }
+}
