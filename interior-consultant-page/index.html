@@ -35,19 +35,19 @@
           <div class="bar b3"></div>
       </div>
       <ul>
-        <li id="home"><a href="/?home">home</a></li>
-        <li id="collection"><a href="/?collection">collection</a></li>
-        <li id="about"><a href="/?about">about</a></li>
-        <li id="contact"><a href="/?contact">contact</a></li>        
+        <li id="home"><a href="./?home">home</a></li>
+        <li id="collection"><a href="./?collection">collection</a></li>
+        <li id="about"><a href="./?about">about</a></li>
+        <li id="contact"><a href="./?contact">contact</a></li>        
       </ul>
       
     </div>
     <div id="navmenu">
       <div id="menuitem">
-        <a href="/?home">home</a>
-        <a href="/?collection">collection</a>
-        <a href="/?about">about</a>
-        <a href="/?contact">contact</a>
+        <a href="./?home">home</a>
+        <a href="./?collection">collection</a>
+        <a href="./?about">about</a>
+        <a href="./?contact">contact</a>
       </div>
       
     </div>
@@ -82,7 +82,7 @@
       if (query) {
         document.getElementById(`${query}`).style.borderBottom = "1px solid #fff"
       }else{
-        window.location.href = '/?home'
+        window.location.href = './?home'
       }
 
       const toggleMenu = ()=>{
