@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.contents {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contents .profile {
+  width: 100%;
+  height: 26rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 4rem;
+}
+
+.contents .profile img {
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+
+  border-radius: 16px;
+}
+
+.contents .profile h1,
+.contents .profile h2 {
+  display: inline;
+  width: auto;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #4e5150;
+}
+
+.contents .profile h2 {
+  margin-top: -2rem;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  color: #a9a9a9;
+}
+
+.profile .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.container .card {
+  padding: 0.75rem 1rem;
+  background: #e5e5e5;
+
+  border-radius: 12px;
+  width: 100px;
+
+  margin: 0 1.71rem;
+}
+
+.container .card p {
+  text-align: center;
+  margin: 4px 0;
+}
+
+.contents .card p:nth-child(1) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #4e5150;
+}
+
+.contents .card p:nth-child(2) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #bdbdbd;
+}
+
+.contents .gallery {
+  width: 80%;
+  height: auto;
+
+  margin-top: 6rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+
+  padding: 1rem;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 12px;
+}
+
+.wrapper .grid-item-1 {
+  grid-area: 1/1/2/2;
+}
+
+.wrapper .grid-item-2 {
+  grid-area: 1/2/1/4;
+}
+.wrapper .grid-item-3 {
+  grid-area: 2/1/3/3;
+}
+.wrapper .grid-item-4 {
+  grid-area: 2/3/4/4;
+}
+
+.wrapper .grid-item-5 {
+  grid-area: 3/1/4/2;
+}
+.wrapper .grid-item-6 {
+  grid-area: 3/2/4/3;
+}
+
+.footer {
+  margin: 6rem 0 2rem 0;
+}
+
+.footer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #b9bdcf;
+}
+
+@media screen and (max-width: 768px) {
+  .contents .profile {
+    height: 18rem;
+  }
+  .contents .profile img {
+    width: 6rem;
+    border-radius: 16px;
+  }
+  .container .profile h1 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .contents .profile h2 {
+    margin-top: -1rem;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .contents .card p:nth-child(1) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .contents .card p:nth-child(2) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .contents .card {
+    margin: 0 1rem;
+  }
+  .contents .gallery {
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contents .card {
+    margin: 0 4px;
+  }
+}
