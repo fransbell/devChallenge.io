@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Material+Icons&display=swap"
+      rel="stylesheet"
+    />    
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Devchallenges | Checkout Page</title>
+
+  </head>
+  <body>
+    <div class="contents">
+      <h1>Checkout</h1>
+      <div class="flex">
+        <div class="shopping-cart">
+          <div class="card">
+            <img src="./photo1.png" alt="bag">
+            <div class="desc">
+              <h5>Vintage Backbag</h5>
+              <p>$54.99 <span>$94.99</span></p>
+              <div class="item-input">
+                <button class="material-icons add" onclick="{add_item('item-one')}">add</button>
+                <input type="number" name="item-one" id="item-one" value="1">
+                <button class="material-icons remove" onclick="{remove_item('item-one')}">remove</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./photo2.png" alt="shoe">
+            <div class="desc">
+              <h5>Levi Shoes</h5>
+              <p>$74.99<span>$124.99</span></p>
+              <div class="item-input">
+                <button class="material-icons add" onclick="{add_item('item-two')}">add</button>
+                <input type="number" name="item-two" id="item-two" value="1">
+                <button class="material-icons remove" onclick="{remove_item('item-two')}">remove</button>
+              </div>
+            </div>
+          </div>
+          <div class="checkout">
+            <hr/>
+            <h4>Shipping</h4>
+            <h4 id="shipping">$ 19</h4>
+            <hr/>
+            <h4>Total</h4>
+            <h4 id="total">$ 148.98</h4>
+          </div>
+        </div>
+        <form>
+          <div class="contact">
+            <h2>Contact infomation</h2>
+            <div class="card">
+              <p>E-mail</p>
+              <span class="material-icons">mail</span>
+              <input type="email" name="email" id="email" placeholder="Enter your email...">
+          </div>
+          <div class="card">
+            <p>Phone</p>
+            <span class="material-icons">call</span>
+            <input type="number" name="phone" id="phone" placeholder="Enter your phone...">
+          </div>            
+            
+          </div>
+          <div class="address">
+            <h2>Shipping address</h2>
+            <div class="card">
+              <p>Full name</p>
+              <span class="material-icons">account_circle</span>
+              <input type="text" name="fullname" id="fullname" placeholder="Rodney Cotton">
+            </div>
+            <div class="card">
+              <p>Address</p>
+              <span class="material-icons">home</span>
+              <input type="text" name="address" id="address" placeholder="Your address..">
+            </div>
+            <div class="card">
+              <p>City</p>
+              <span class="material-icons">location_city</span>
+              <input type="text" name="city" id="city" placeholder="Your city..">
+            </div>
+            <div class="halfling">
+              <div class="half-card">
+                <p>Country</p>
+                <span class="material-icons">public</span>
+                <select name="country" id="country" placeholder="Your country..">
+                  <option value="default">Your country..</option>
+                </select>
+              </div>
+              <div class="half-card">
+                <p>Postal code</p>
+                <span class="material-icons">markunread_mailbox</span>
+                <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code..">
+              </div>                
+            </div>
+          </div>
+          <div class="saveinfo">
+            <input type="checkbox" name="saveinfo" id="saveinfo">
+            <label for="saveinfo">Save this information for next time</label>
+          </div>            
+          <button type="submit">continue</button>
+        </form>
+      </div>
+      <div class="footer">
+        <p>created by fransbell - devChallenges.io</p>
+      </div>
+    </div>
+    <script>
+      const list = document.querySelectorAll('#item-one, #item-two');
+      // listener for shoppong input changed by edit
+      list.forEach(elem=>{
+        elem.addEventListener('input', (e) => {
+          priceUpdate()
+        });
+      })
+      // utils clamp function
+      const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+      // add_item func => bind with add button
+      const add_item = (id)=>{
+        const item = document.getElementById(id)
+        item.value = String(parseInt(item.value) + 1)
+        item.value = clamp(item.value,0,99)
+        priceUpdate()
+      }
+      // remove_item func => bind with add button
+      const remove_item = (id) => {
+        const item = document.getElementById(id)
+        item.value = String(parseInt(item.value) - 1)
+        item.value = clamp(item.value, 0, 99)
+        priceUpdate()
+      }
+      // price update runs on edit input:number or clicked add / remove button
+      const priceUpdate = () =>{
+        const [itemOne, itemTwo] = document.querySelectorAll('#item-one, #item-two');
+        const total = document.getElementById("total")
+
+        let itemSum = (parseInt(itemOne.value) * 54.99) + (parseInt(itemTwo.value) * 74.99)
+
+        total.innerText = `$ ${(itemSum + 19).toFixed(2)}`
+      }
+    </script>
+  </body>
+</html>
