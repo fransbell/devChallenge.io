@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Heebo&family=Material+Icons&display=swap");
+
+@import "./_reset.css";
+@import "./_navbar.css";
+@import "./_hero.css";
+@import "./_design.css";
+@import "./_gallery.css";
+@import "./_team.css";
+@import "./_footer.css";
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.root {
+  max-width: 1440px;
+}

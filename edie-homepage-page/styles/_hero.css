@@ -1,0 +1,150 @@
+/* typography ---------------------------------------------------------- */
+
+.hero {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.hero h4 {
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #2d9cdb;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 72px;
+
+  color: #333333;
+}
+
+.typo p:nth-child(5) {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #4f4f4f;
+}
+
+.typo p:nth-child(6) {
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #828282;
+}
+
+.typo button {
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #f2f2f2;
+}
+
+/* contents style ---------------------------------------------------------- */
+
+.banner {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+}
+
+.hero {
+  margin-top: 62px;
+  position: relative;
+}
+
+.hero h1,
+.hero p {
+  width: 50%;
+}
+
+.hero h1,
+.hero p,
+.hero h4 {
+  margin: 21px 0;
+  margin-left: 20%;
+}
+
+.hero input {
+  position: relative;
+
+  width: 350px;
+  height: 38px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 12px;
+
+  padding: 1rem;
+}
+
+.hero input:focus {
+  outline: none;
+}
+
+.hero .email {
+  width: 350px;
+  position: relative;
+  margin-left: 20%;
+}
+
+.hero button {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+
+  width: 80px;
+  height: 34px;
+
+  border: none;
+  background: #2d9cdb;
+  border-radius: 12px;
+}
+
+.typo button:hover {
+  transform: scale(0.99);
+  top: 3px;
+  background: #2894d3;
+}
+
+.typo p:nth-child(6) {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .typo {
+    width: 100%;
+  }
+
+  .hero h1,
+  .hero p,
+  .hero h4 {
+    width: 80%;
+    margin: 21px auto;
+    padding: 0 10%;
+  }
+
+  .hero h1,
+  .hero p {
+    width: 100%;
+  }
+
+  .hero .email {
+    margin-left: 10%;
+  }
+
+  .banner {
+    padding: 0;
+  }
+
+  .banner img {
+    display: block;
+    margin: 0 auto;
+  }
+}

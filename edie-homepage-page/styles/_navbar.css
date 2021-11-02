@@ -1,0 +1,101 @@
+/* typography ---------------------------------------------------------- */
+
+.navigation .logo h1 {
+  font-family: Heebo;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+
+.navbar ul li {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #333333;
+}
+
+/* contents style ---------------------------------------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 42px 52px;
+}
+
+.navigation {
+  width: 60%;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.navigation ul li {
+  margin: 20xp;
+}
+
+@media screen and (max-width: 1280px) {
+  .navigation {
+    width: 70%;
+  }
+  .navbar ul li {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .navigation {
+    width: 90%;
+  }
+  .navbar ul li {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navigation {
+    display: none;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 18px;
+    height: 12px;
+    position: relative;
+  }
+
+  .hamburger input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    opacity: 0;
+  }
+
+  .hamburger > * {
+    width: 18px;
+    height: 2px;
+    background-color: #000;
+  }
+}

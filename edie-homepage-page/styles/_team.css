@@ -1,0 +1,159 @@
+/* typography ---------------------------------------------------------- */
+
+.text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+}
+.text h3 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #eb5757;
+}
+.text h2 {
+  font-size: 36px;
+  line-height: 54px;
+  color: #333333;
+}
+.text p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+}
+
+.team-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.team-footer h3 {
+  font-size: 36px;
+  line-height: 54px;
+  color: #333333;
+}
+.team-footer h4 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+.team-footer p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #828282;
+}
+
+/* contents style ---------------------------------------------------------- */
+
+.team {
+  margin: 0 10%;
+  margin-bottom: 200px;
+}
+
+.team-banner {
+  display: flex;
+  justify-content: space-between;
+  height: 560px;
+
+  align-items: center;
+}
+
+.text {
+  width: 30%;
+}
+
+.image {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.image img {
+  display: block;
+  border-radius: 24px;
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.align-left {
+  display: flex;
+  align-items: center;
+}
+
+.align-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.align-right img:nth-child(1) {
+  width: 90%;
+}
+
+.team-footer h3 {
+  margin-top: 196px;
+  width: 85%;
+}
+
+.team-footer .author {
+  display: flex;
+  width: 30%;
+  margin-top: 38px;
+}
+
+.team-footer img {
+  display: block;
+  width: 82px;
+  height: 82px;
+  border-radius: 16px;
+}
+
+.team-footer .label {
+  height: 82px;
+  margin-left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .team {
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  .team-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 660px;
+  }
+  .text {
+    width: 80%;
+  }
+
+  .text > * {
+    width: 80%;
+  }
+  .image {
+    display: flex;
+    width: 80%;
+    height: auto;
+  }
+
+  .team-footer h3 {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .team-footer .author {
+    width: 100%;
+    padding: 0 10%;
+  }
+  .team-footer .label {
+    width: 100%;
+  }
+}

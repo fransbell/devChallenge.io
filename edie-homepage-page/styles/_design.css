@@ -1,0 +1,120 @@
+/* typography ---------------------------------------------------------- */
+
+.design h1 {
+  width: 30%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+
+  color: #333333;
+}
+
+.card {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.card span {
+  display: block;
+  width: 67px;
+  height: 67px;
+  font-size: 40px;
+  line-height: 67px;
+  text-align: center;
+  border-radius: 16px;
+
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #333333;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #4f4f4f;
+}
+
+.card.ui span {
+  background: #2d9cdb;
+}
+
+.card.frontend span {
+  background: #27ae60;
+}
+
+.card.backend span {
+  background: #eb5757;
+}
+
+/* contents style ---------------------------------------------------------- */
+
+.design {
+  margin-top: 200px;
+}
+
+.design h1 {
+  margin-left: 10%;
+  margin-bottom: 154px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.card {
+  width: 341px;
+  height: 422px;
+  background: #ffffff;
+  padding: 3.28rem 2.42rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+}
+
+.card button {
+  width: 116px;
+  height: 42px;
+
+  background: #e0e0e0;
+  border: none;
+  border-radius: 12px;
+}
+
+.card:hover > button {
+  background: #2d9cdb;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .design h1 {
+    width: 50%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 1340px;
+  }
+
+  .card {
+    width: 341px;
+  }
+}

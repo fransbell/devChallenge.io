@@ -1,0 +1,146 @@
+/* typography ---------------------------------------------------------- */
+
+.footer {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+}
+
+.content.flex .nav ul li {
+  font-size: 18px;
+  line-height: 200%;
+}
+
+.social-links h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 53px;
+  color: #f2f2f2;
+}
+
+.contact input[type="email"] {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  color: #333;
+}
+
+.content.flex p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer > p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #f2f2f2;
+}
+
+/* contents style ---------------------------------------------------------- */
+.footer {
+  height: 385px;
+  background-color: #100e1d;
+  color: #fff;
+  position: relative;
+  padding-top: 46px;
+}
+
+.content.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content.flex .nav ul li {
+  list-style: none;
+}
+
+.content .social-links .social {
+  display: flex;
+  justify-content: space-between;
+  width: 94px;
+  overflow: hidden;
+}
+
+.content .social-links .social > * {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* twitter svg offset  */
+.social img:nth-child(3) {
+  margin-top: 1px;
+}
+
+.footer > p {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer .contact {
+  position: relative;
+  width: 350px;
+}
+
+.contact input[type="email"] {
+  margin-top: 9px;
+
+  width: calc(350px / 1.4);
+  height: calc(57px / 1.4);
+  background: #f2f2f2;
+  border: none;
+  border-radius: 6px;
+
+  padding: 0.5rem;
+
+  transform-origin: top left;
+  transform: scale(1.4);
+}
+
+.contact input:focus {
+  outline: none;
+}
+
+.contact button {
+  position: absolute;
+
+  right: 31px;
+  bottom: 111px;
+
+  width: calc(94px / 1.4);
+  height: calc(49px / 1.4);
+
+  background: #2d9cdb;
+  border: none;
+  border-radius: 6px;
+
+  transform-origin: top left;
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 100px;
+    height: 693px;
+  }
+
+  .contact button {
+    bottom: 1px;
+  }
+
+  ul {
+    padding-inline-start: 0;
+  }
+
+  .content.flex {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 539px;
+    padding: 0 10%;
+    padding-bottom: 100px;
+  }
+}
